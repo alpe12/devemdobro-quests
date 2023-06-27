@@ -8,7 +8,7 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 54px 72px;
+    margin: 54px 72px 40px 72px;
 }
 
 header {
