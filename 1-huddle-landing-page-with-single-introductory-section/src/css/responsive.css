@@ -1,0 +1,47 @@
+@media (max-width: 600px){
+    body {
+        background: hsl(257, 40%, 49%) url("../images/bg-mobile.svg") top/contain no-repeat;
+        margin: 38px 40px;
+    }
+    header {
+        margin-bottom: 64px;
+    }
+    header .logo {
+        height: 38px;
+    }
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+    main .info {
+        margin-top: 12px;
+        padding-right: unset;
+        font-size: 19px;
+    }
+    main .info .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    main .info .description {
+        margin-bottom: 28px;
+    }
+    main .info .register {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 56px;
+        width: 240px;
+        height: 48px;
+        font-size: 14px;
+    }
+    footer {
+        align-self: center;
+    }
+    footer a.social {
+        height: 36px;
+        width: 36px;
+    }
+    footer a.social img {
+        height: 16px;
+        width: 16px;
+    }
+}

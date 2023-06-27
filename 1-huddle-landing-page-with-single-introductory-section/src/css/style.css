@@ -1,0 +1,101 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+
+body {
+    background: hsl(257, 40%, 49%) url("../images/bg-desktop.svg") no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 54px 72px;
+}
+
+header {
+    margin-bottom: 80px;
+}
+header .logo {
+    height: 52px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 16px;
+}
+main .appimg-container {
+    align-self: center;
+    flex: 1 0 55%;
+}
+main .info {
+    margin-top: 44px;
+    font-size: 18px;
+    padding-right: 16px;
+}
+main .info .title {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+main .info .description {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 24px;
+    line-height: 150%;
+}
+main .info .register {
+    background-color: white;
+    color: hsl(228, 45%, 44%);
+    width: 200px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+main .info .register:hover {
+    color: white;
+    background-color: rgb(233, 128, 231);
+}
+
+footer {
+    align-self: flex-end;
+    display: flex;
+    gap: 16px;
+    margin-right: 8px;
+}
+footer a.social {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a.social img {
+    height: 20px;
+    width: 20px;
+    filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(254deg) brightness(112%) contrast(100%);
+}
+footer a.social:hover {
+    border-color: rgb(251, 83, 192);
+}
+footer a.social:hover > img {
+    filter: invert(55%) sepia(31%) saturate(5377%) hue-rotate(292deg) brightness(99%) contrast(100%);
+}
+.attribution {
+    position: fixed;
+    top: 0;
+    margin-left: -72px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px; 
+}
+.attribution a {
+    color: white;
+    text-decoration: underline;
+}
+.attribution a:hover {
+    color: lightgray;
+}
