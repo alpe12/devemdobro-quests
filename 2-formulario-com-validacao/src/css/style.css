@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgba(223,101,150,0.65), rgba(98,130,229,0.85));
+}
+
+.container {
+    width: 800px;
+    min-height: 402px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    outline: 1px outset black;
+    background-image: linear-gradient(rgb(223,101,150), rgb(98,130,229));
+}
+
+.container .mensagem {
+    width: 37.5%;
+    color: white;
+}
+
+.container .mensagem h2 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.container .formulario {
+    width: 340px;
+    background-color: white;
+    padding: 20px;
+}
+
+.container .formulario > * {
+    display: block;
+    width: 100%;
+}
+
+.container .formulario input,
+.container .formulario textarea {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.container .formulario input:not(:first-child),
+.container .formulario textarea,
+.container .formulario .alerta {
+    margin-top: 15px;
+}
+
+.container .formulario .alerta {
+    margin-left: -5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container .formulario .error {
+    border-color: red;
+}
+
+.container .formulario .ok {
+    border-color: #00C22B;
+}
+
+.container .formulario .error + span:empty:after {
+    content: 'campo obrigatório';
+    color: #F52E2E;
+    font-size: 8px;
+    position: absolute;
+}
+
+.container .formulario textarea {
+    height: 100px;
+    resize: none;
+    scrollbar-width: thin;
+}
+
+.container .formulario input[type=submit] {
+    color:white;
+    background-color: #3CCC87;
+    border-color: transparent;
+    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    .container {
+        outline-width: 2px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+    .container .mensagem p {
+        text-align: justify;
+    }
+    .container > * {
+        min-width: 80%;
+    }
+    .container,
+    .container .container .mensagem {
+        max-width: 100%;
+    }
+    .container .formulario {
+        max-width: 95%;
+        background-color: rgba(255,255,255,0.5);
+        border-radius: 5px;
+    }
+}
