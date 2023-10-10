@@ -59,7 +59,7 @@ main .quests .quest .descricao {
     text-align: justify;
 }
 
-@media (max-width: 504px) {
+@media (max-width: 505px) {
     .quests {
         padding: 5px;
     }
