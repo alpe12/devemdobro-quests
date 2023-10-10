@@ -16,7 +16,7 @@ function validateForm() {
 
 const inputs = document.querySelectorAll(".formulario input:not([type=submit]), .formulario textarea");
 
-document.querySelector(".formulario input[type=submit]").addEventListener('click', validateForm);
+document.querySelector(".formulario button[type=submit]").addEventListener('click', validateForm);
 
 inputs.forEach(input => {
     input.addEventListener('input', function(){

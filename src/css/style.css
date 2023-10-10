@@ -18,7 +18,7 @@ main h1 {
 
 main .quests {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
     justify-content: center;
     gap: 2rem;
 }
@@ -44,6 +44,7 @@ main .quests .quest .titulo {
     margin: 0;
     min-height: 2.4em;
     text-align: center;
+    padding: 0 2px;
 }
 
 main .quests .quest .imagem {
@@ -56,4 +57,13 @@ main .quests .quest .imagem {
 main .quests .quest .descricao {
     color: black;
     text-align: justify;
+}
+
+@media (max-width: 504px) {
+    .quests {
+        padding: 5px;
+    }
+    main .quests .quest {
+        padding: 0;
+    }
 }
