@@ -1,14 +1,21 @@
 html {
     font-family: 'Poppins', sans-serif;
     color:white;
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
     background: hsl(257, 40%, 49%) url("../images/bg-desktop.svg") no-repeat;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 54px 72px 40px 72px;
+    background-position: center;
+
 }
 
 header {
@@ -85,9 +92,9 @@ footer a.social:hover > img {
     filter: invert(55%) sepia(31%) saturate(5377%) hue-rotate(292deg) brightness(99%) contrast(100%);
 }
 .attribution {
-    position: fixed;
+    position: absolute;
     top: 0;
-    margin-left: -72px;
+    left: 0;
     width: 100%;
     text-align: center;
     font-size: 11px; 

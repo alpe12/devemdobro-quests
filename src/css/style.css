@@ -20,10 +20,10 @@ main .quests {
     display: grid;
     grid-template-columns: repeat(auto-fit, 500px);
     justify-content: center;
+    gap: 2rem;
 }
 
 main .quests .quest {
-    margin: 1em;
     outline: thin solid #c0c0c0;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ main .quests .quest {
     background-color: rgba(0,0,0,0.2);
     text-decoration: none;
     color: white;
-    border-radius: 1em;
+    border-radius: 1rem;
 }
 
 
@@ -49,8 +49,8 @@ main .quests .quest .titulo {
 main .quests .quest .imagem {
     object-fit: contain;
     max-width: 100%;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 main .quests .quest .descricao {
