@@ -97,16 +97,11 @@ body {
     font-weight: 700;
 }
 
-@media (max-width: 800px) {
-    .container {
-        outline-width: 2px;
-    }
-}
-
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
         padding-bottom: 1em;
+        outline: none;
     }
     .container .mensagem p {
         text-align: justify;
