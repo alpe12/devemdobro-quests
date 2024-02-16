@@ -170,6 +170,10 @@ main {
   text-align: center;
 }
 
+.container .profile-data .events table td a:hover {
+  text-decoration: underline;
+}
+
 .container .profile-data.hide{
   display: none;
 }

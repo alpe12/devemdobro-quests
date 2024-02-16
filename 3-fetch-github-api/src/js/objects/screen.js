@@ -49,7 +49,7 @@ const screen = {
                     msg = 'Created ' + event.payload.ref_type;
                     if (event.payload.ref_type !== 'repository') msg += ' ' + event.payload.ref;
                 }
-                eventsItems += `<tr><td>${event.repo.name}</td><td>${msg !== undefined ? msg : ''}</td></tr>`;
+                eventsItems += `<tr><td><a href="https://github.com/${event.repo.name}" target="_blank">${event.repo.name}</a></td><td>${msg !== undefined ? msg : ''}</td></tr>`;
             });
             this.userProfile.innerHTML += `
                 <div class="events">
