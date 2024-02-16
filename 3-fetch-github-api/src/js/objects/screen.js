@@ -39,7 +39,6 @@ const screen = {
         if (user.events.length > 0){
             let eventsItems = "";
             user.events.forEach(event => {
-                console.log(event)
                 let msg;
                 if (event.type === 'PushEvent'){
                     msg = event.payload.commits[0].message;
