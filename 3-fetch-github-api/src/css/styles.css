@@ -166,8 +166,11 @@ main {
 }
 
 .container .profile-data .events table td:first-child {
-  font-weight: bold;
   text-align: center;
+}
+
+.container .profile-data .events table td:first-child a {
+  font-weight: bold;
 }
 
 .container .profile-data .events table td a:hover {
